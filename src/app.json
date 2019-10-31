@@ -1,0 +1,94 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "config": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/sort/index",
+      "config": {
+        "navigationBarTitleText": "分类",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "config": {
+        "enablePullDownRefresh": true,
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/myself/index",
+      "config": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    "pages/auth/index"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "backgroundColor": "#fff",
+    "selectedColor": "#ec5b05",
+    "borderStyle": "black",
+
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/home/index",
+      "iconPath": "static/tabs/home.png",
+      "selectedIconPath": "static/tabs/home-active.png"
+    }, {
+      "text": "分类",
+      "pagePath": "pages/sort/index",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
+      "text": "购物车",
+      "pagePath": "pages/cart/index",
+      "iconPath": "static/tabs/cart.png",
+      "selectedIconPath": "static/tabs/cart-active.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/myself/index",
+      "iconPath": "static/tabs/my.png",
+      "selectedIconPath": "static/tabs/my-active.png"
+    }],
+    "position": "bottom"
+  },
+  "usingComponents": {
+    "i-button": "static/iview/button/index",
+    "i-panel": "static/iview/panel/index",
+    "i-input": "static/iview/input/index",
+    "i-toast": "static/iview/toast/index",
+    "i-notice-bar": "static/iview/notice-bar/index",
+    "i-cell-group": "static/iview/cell-group/index",
+    "i-cell": "static/iview/cell/index",
+    "i-icon": "static/iview/icon/index",
+    "i-spin": "static/iview/spin/index",
+    "i-swipeout": "static/iview/swipeout/index",
+    "i-grid": "static/iview/grid/index",
+    "i-grid-item": "static/iview/grid-item/index",
+    "i-grid-icon": "static/iview/grid-icon/index",
+    "i-grid-label": "static/iview/grid-label/index",
+    "i-tabs": "static/iview/tabs/index",
+    "i-tab": "static/iview/tab/index",
+    "i-input-number": "static/iview/input-number/index",
+    "i-count-down": "static/iview/count-down/index",
+    "i-rate": "static/iview/rate/index",
+    "i-badge": "static/iview//badge/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

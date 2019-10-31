@@ -1,0 +1,118 @@
+.cart-list {
+  overflow-x: hidden;
+  padding-bottom: 110rpx;
+  li {
+    position: relative;
+    padding: 18rpx 0;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    border-bottom: 1rpx solid #d6d5db;
+    .item {
+      display: flex;
+      padding: 18rpx 30rpx;
+      background: #ffffff;
+      .check {
+        img {
+          padding-right: 10rpx;
+          width: 30rpx;
+          height: 30rpx;
+        }
+      }
+      .item-img {
+        width: 180rpx;
+        height: 180rpx;
+        padding: 0 20rpx 0 10rpx;
+      }
+      .content {
+        flex: 1;
+        .params {
+          .title {
+            font-size: 14px;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .weight {
+            color: #a9a9a9;
+            font-size: 12px;
+          }
+        }
+        .money {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .price {
+            color: #eb5b04;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .btn-group {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 14px;
+      transform: translateX(100%);
+      .btn-delete {
+        background-color: #b4282d;
+        color: #ffffff;
+        width: 75px;
+        height: 100%;
+        line-height: 256rpx;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 98rpx;
+  background: #ffffff;
+  z-index: 9999;
+  box-shadow: 0 15rpx 20rpx 20rpx #e0e0e0;
+  .total {
+    display: flex;
+    text-align: right;
+    flex: 1;
+    font-size: 14px;
+    padding-right: 40rpx;
+    span {
+      color: #eb5b04;
+      font-weight: 600;
+    }
+    .select-all {
+      display: flex;
+      align-items: center;
+      padding-right: 30rpx;
+      img {
+        padding: 15rpx;
+        width: 30rpx;
+        height: 30rpx;
+      }
+    }
+    .total-money {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .buy {
+    width: 240rpx;
+    height: 100%;
+    background: #eb5b04;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 98rpx;
+  }
+}

@@ -1,0 +1,206 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.swiper {
+  margin-top: 84rpx;
+  swiper {
+    width: 750rpx;
+    height: 320rpx;
+    swiper-item {
+      width: 750rpx;
+      height: 32rpx;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.discount-title {
+  height: 116rpx;
+  width: 750rpx;
+}
+scroll-view {
+  width: 750rpx;
+  overflow: hidden;
+}
+.discount-list {
+  margin-left: 30rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  .item {
+    width: 580rpx;
+    display: flex;
+    padding: 20rpx;
+    box-shadow: 2rpx 6rpx 15rpx 4rpx #f4f4f4;
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    .prod-img {
+      width: 200rpx;
+      height: 200rpx;
+      padding-right: 30rpx;
+    }
+    .content {
+      .deadline {
+        position: relative;
+        padding: 6rpx 0;
+        height: 38rpx;
+        img {
+          position: absolute;
+          width: 200rpx;
+          height: 37rpx;
+        }
+        .second-time {
+          position: absolute;
+        }
+      }
+      .title {
+        padding-top: 18rpx;
+        font-size: 12px;
+        line-height: 18px;
+        width: 350rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .money {
+        padding-top: 24rpx;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .price {
+          color: #eb5b04;
+          font-size: 14px;
+        }
+        .origin-price {
+          position: relative;
+          font-size: 12px;
+          color: #989898;
+          &::after {
+            position: absolute;
+            display: block;
+            height: 1rpx;
+            width: 100%;
+            background: #989898;
+            top: 50%;
+            left: 0;
+            content: ' ';
+          }
+        }
+        .more {
+          font-size: 12px;
+          padding: 8rpx 14rpx;
+          background: #ff2d2e;
+          border-radius: 15rpx;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+.media {
+  padding: 50rpx 30rpx;
+  video {
+    width: 100%;
+    height: 340rpx;
+  }
+}
+
+
+.categories {
+  .item {
+    .cat-title {
+      height: 98rpx;
+      line-height: 98rpx;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 0 30rpx;
+      color: #222222;
+      font-size: 36rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cat-more-title {
+      font-size: 24rpx;
+      font-weight: normal;
+      color: #999999;
+    }
+    .cat-more {
+      color: #999999;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      height: 608rpx;
+      flex-direction: column;
+      align-content: flex-start;
+      overflow-x: scroll;
+      .product-item {
+        padding: 0 10rpx;
+        height: 304rpx;
+        img {
+          display: block;
+          width: 168rpx;
+          height: 168rpx;
+          padding-bottom:14rpx;
+        }
+        video {
+          display: block;
+          width: 168rpx;
+          height: 168rpx;
+          padding-bottom:14rpx;
+        }
+        .title {
+          font-size: 12px;
+          line-height: 18px;
+          width: 168rpx;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .price {
+          width: 168rpx;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #eb5b04;
+          font-weight: 600;
+          text-align: center;
+          padding: 4rpx 0 10rpx;
+        }
+      }
+      .product-item:first-child {
+        height: 500rpx;
+        img {
+          width: 355rpx;
+          height: 355rpx;
+        }
+        video {
+          width: 355rpx;
+          height: 355rpx;
+        }
+        .title {
+          padding-top: 30rpx;
+          font-size: 14px;
+          width: 355rpx;
+        }
+        .price {
+          width: 355rpx;
+          font-size: 16px;
+          padding: 30rpx 0 10rpx;
+        }
+      }
+    }
+  }
+}
